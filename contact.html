@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Fluxkode</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fk-navbar fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fk-brand" href="index.html"><span class="brand-icon">⬡</span> Fluxkode</a>
+    <button class="navbar-toggler fk-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="technology.html">Technology</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item ms-lg-3"><a class="nav-link fk-btn-nav active" href="contact.html">Let's Talk</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="fk-page-hero">
+  <div class="container">
+    <div class="col-lg-8" data-animate="fade-up">
+      <div class="fk-breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <span class="fk-eyebrow">Get In Touch</span>
+      <h1 class="fk-page-hero-title">Let's Build Something<br/><em>Great Together</em></h1>
+      <p>Tell us about your project and we'll get back to you with a custom proposal within 24 hours. No obligations, just a conversation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section class="fk-section py-6">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- FORM -->
+      <div class="col-lg-7" data-animate="fade-right">
+        <div style="background:var(--fk-warm-white);border:1px solid var(--fk-border);border-radius:var(--fk-radius-lg);padding:2.5rem;">
+          <h3 style="font-family:var(--fk-font-display);font-size:1.8rem;font-weight:600;margin-bottom:0.4rem;">Send Us a Message</h3>
+          <p style="font-size:0.9rem;color:var(--fk-slate-50);margin-bottom:2rem;">Fill in the details below and we'll respond within 24 hours.</p>
+
+          <form class="fk-contact-form" id="fkContactForm" novalidate>
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label for="firstName">First Name *</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Aryan" required/>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName">Last Name *</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Kapoor" required/>
+              </div>
+
+              <div class="col-md-6">
+                <label for="email">Email Address *</label>
+                <input type="email" class="form-control" id="email" placeholder="aryan@company.com" required/>
+              </div>
+              <div class="col-md-6">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="+91 98765 43210"/>
+              </div>
+
+              <div class="col-12">
+                <label for="company">Company / Business Name</label>
+                <input type="text" class="form-control" id="company" placeholder="Your Company Pvt. Ltd."/>
+              </div>
+
+              <div class="col-md-6">
+                <label for="service">Service Required *</label>
+                <select class="form-select" id="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="webdev">Web Development</option>
+                  <option value="design">Web Design</option>
+                  <option value="webapp">Web Application</option>
+                  <option value="email">HTML Email Templates</option>
+                  <option value="figma">Figma to Code</option>
+                  <option value="wordpress">WordPress Development</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="budget">Estimated Budget</label>
+                <select class="form-select" id="budget">
+                  <option value="" disabled selected>Select a budget range</option>
+                  <option value="under25k">Under ₹25,000</option>
+                  <option value="25k-60k">₹25,000 – ₹60,000</option>
+                  <option value="60k-150k">₹60,000 – ₹1,50,000</option>
+                  <option value="150k-300k">₹1,50,000 – ₹3,00,000</option>
+                  <option value="300k+">₹3,00,000+</option>
+                  <option value="discuss">Prefer to Discuss</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label for="timeline">Project Timeline</label>
+                <select class="form-select" id="timeline">
+                  <option value="" disabled selected>When do you need this?</option>
+                  <option value="asap">ASAP (Rush project)</option>
+                  <option value="2weeks">Within 2 weeks</option>
+                  <option value="1month">Within 1 month</option>
+                  <option value="3months">Within 3 months</option>
+                  <option value="flexible">Flexible / Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label for="message">Project Description *</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your project — what do you want to build, what problems are you solving, and any specific requirements you have..." required></textarea>
+              </div>
+
+              <div class="col-12">
+                <label for="referral">How did you hear about us?</label>
+                <select class="form-select" id="referral">
+                  <option value="" disabled selected>Select an option</option>
+                  <option>Google Search</option>
+                  <option>LinkedIn</option>
+                  <option>Instagram</option>
+                  <option>Referral from a friend</option>
+                  <option>Previous client</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="col-12 mt-2">
+                <button type="submit" class="fk-btn-primary w-100" style="justify-content:center;padding:1rem;">
+                  <i class="bi bi-send me-2"></i> Send Message
+                </button>
+                <p style="font-size:0.78rem;color:var(--fk-slate-50);text-align:center;margin-top:0.8rem;">We reply within 24 hours. Your information is kept private.</p>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-5" data-animate="fade-left">
+
+        <!-- Contact Info -->
+        <div class="mb-4">
+          <h4 style="font-family:var(--fk-font-display);font-size:1.5rem;font-weight:600;margin-bottom:1.5rem;">Contact Information</h4>
+
+          <div class="fk-contact-info-item">
+            <div class="fk-ci-icon"><i class="bi bi-envelope"></i></div>
+            <div class="fk-ci-content">
+              <strong>Email Us</strong>
+              <span><a href="mailto:hello@fluxkode.dev" style="color:var(--fk-gold);">hello@fluxkode.dev</a></span>
+            </div>
+          </div>
+
+          <div class="fk-contact-info-item">
+            <div class="fk-ci-icon"><i class="bi bi-telephone"></i></div>
+            <div class="fk-ci-content">
+              <strong>Call Us</strong>
+              <span><a href="tel:+919876543210" style="color:var(--fk-gold);">+91 98765 43210</a></span>
+            </div>
+          </div>
+
+          <div class="fk-contact-info-item">
+            <div class="fk-ci-icon"><i class="bi bi-whatsapp"></i></div>
+            <div class="fk-ci-content">
+              <strong>WhatsApp</strong>
+              <span><a href="https://wa.me/919876543210" style="color:var(--fk-gold);">Chat Now</a> — Quick responses</span>
+            </div>
+          </div>
+
+          <div class="fk-contact-info-item">
+            <div class="fk-ci-icon"><i class="bi bi-geo-alt"></i></div>
+            <div class="fk-ci-content">
+              <strong>Office</strong>
+              <span>Mumbai, Maharashtra, India</span>
+            </div>
+          </div>
+
+          <div class="fk-contact-info-item">
+            <div class="fk-ci-icon"><i class="bi bi-clock"></i></div>
+            <div class="fk-ci-content">
+              <strong>Working Hours</strong>
+              <span>Mon–Sat: 9:00 AM – 7:00 PM IST</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div style="background:var(--fk-cream);border-radius:var(--fk-radius-lg);padding:1.8rem;margin-bottom:1.5rem;">
+          <h6 style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--fk-slate-50);margin-bottom:1rem;">Follow Us</h6>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#" style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--fk-warm-white);border:1px solid var(--fk-border);border-radius:100px;padding:0.5rem 1rem;font-size:0.82rem;font-weight:500;color:var(--fk-slate);transition:var(--fk-transition);" onmouseover="this.style.background='var(--fk-slate)';this.style.color='var(--fk-ivory)'" onmouseout="this.style.background='var(--fk-warm-white)';this.style.color='var(--fk-slate)'">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="#" style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--fk-warm-white);border:1px solid var(--fk-border);border-radius:100px;padding:0.5rem 1rem;font-size:0.82rem;font-weight:500;color:var(--fk-slate);transition:var(--fk-transition);" onmouseover="this.style.background='var(--fk-slate)';this.style.color='var(--fk-ivory)'" onmouseout="this.style.background='var(--fk-warm-white)';this.style.color='var(--fk-slate)'">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a href="#" style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--fk-warm-white);border:1px solid var(--fk-border);border-radius:100px;padding:0.5rem 1rem;font-size:0.82rem;font-weight:500;color:var(--fk-slate);transition:var(--fk-transition);" onmouseover="this.style.background='var(--fk-slate)';this.style.color='var(--fk-ivory)'" onmouseout="this.style.background='var(--fk-warm-white)';this.style.color='var(--fk-slate)'">
+              <i class="bi bi-twitter-x"></i> Twitter
+            </a>
+            <a href="#" style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--fk-warm-white);border:1px solid var(--fk-border);border-radius:100px;padding:0.5rem 1rem;font-size:0.82rem;font-weight:500;color:var(--fk-slate);transition:var(--fk-transition);" onmouseover="this.style.background='var(--fk-slate)';this.style.color='var(--fk-ivory)'" onmouseout="this.style.background='var(--fk-warm-white)';this.style.color='var(--fk-slate)'">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- What Happens Next -->
+        <div style="background:var(--fk-warm-white);border:1px solid var(--fk-border);border-radius:var(--fk-radius-lg);padding:1.8rem;">
+          <h6 style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--fk-slate-50);margin-bottom:1.2rem;">What Happens Next?</h6>
+          <div style="display:flex;flex-direction:column;gap:1.2rem;">
+            <div style="display:flex;align-items:flex-start;gap:1rem;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--fk-gold-pale);display:flex;align-items:center;justify-content:center;font-family:var(--fk-font-display);font-weight:700;font-size:1rem;color:var(--fk-gold);flex-shrink:0;">1</div>
+              <div>
+                <strong style="font-size:0.88rem;display:block;margin-bottom:2px;">We review your message</strong>
+                <span style="font-size:0.82rem;color:var(--fk-slate-50);">Within 24 hours, our team reads your brief carefully.</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:1rem;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--fk-gold-pale);display:flex;align-items:center;justify-content:center;font-family:var(--fk-font-display);font-weight:700;font-size:1rem;color:var(--fk-gold);flex-shrink:0;">2</div>
+              <div>
+                <strong style="font-size:0.88rem;display:block;margin-bottom:2px;">Discovery call</strong>
+                <span style="font-size:0.82rem;color:var(--fk-slate-50);">We schedule a 30-min call to understand your project deeply.</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:1rem;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--fk-gold-pale);display:flex;align-items:center;justify-content:center;font-family:var(--fk-font-display);font-weight:700;font-size:1rem;color:var(--fk-gold);flex-shrink:0;">3</div>
+              <div>
+                <strong style="font-size:0.88rem;display:block;margin-bottom:2px;">Custom proposal</strong>
+                <span style="font-size:0.82rem;color:var(--fk-slate-50);">You receive a detailed proposal with timeline and pricing.</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:1rem;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--fk-slate);display:flex;align-items:center;justify-content:center;font-family:var(--fk-font-display);font-weight:700;font-size:1rem;color:var(--fk-gold);flex-shrink:0;">4</div>
+              <div>
+                <strong style="font-size:0.88rem;display:block;margin-bottom:2px;">We get to work!</strong>
+                <span style="font-size:0.82rem;color:var(--fk-slate-50);">Once approved, your project begins immediately.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section class="py-5 bg-light-cream">
+  <div class="container">
+    <div style="border-radius:var(--fk-radius-lg);overflow:hidden;border:1px solid var(--fk-border);height:320px;background:var(--fk-cream);display:flex;align-items:center;justify-content:center;position:relative;" data-animate="fade-up">
+      <!-- Decorative map-style graphic -->
+      <div style="position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(28,28,46,0.03) 0,rgba(28,28,46,0.03) 1px,transparent 1px,transparent 40px),repeating-linear-gradient(90deg,rgba(28,28,46,0.03) 0,rgba(28,28,46,0.03) 1px,transparent 1px,transparent 40px);"></div>
+      <div style="text-align:center;position:relative;z-index:1;">
+        <div style="width:56px;height:56px;background:var(--fk-slate);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 0 0 12px rgba(28,28,46,0.1);">
+          <i class="bi bi-geo-alt-fill" style="color:var(--fk-gold);font-size:1.4rem;"></i>
+        </div>
+        <strong style="display:block;font-size:1rem;font-weight:600;margin-bottom:4px;">Fluxkode HQ</strong>
+        <span style="font-size:0.85rem;color:var(--fk-slate-50);">Mumbai, Maharashtra, India</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="fk-footer">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-lg-4">
+        <a class="fk-brand mb-3 d-inline-block" href="index.html"><span class="brand-icon">⬡</span> Fluxkode</a>
+        <p class="fk-footer-desc">Premium web agency crafting digital experiences that convert visitors into loyal customers.</p>
+        <div class="fk-social-links mt-3">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <h6>Pages</h6>
+        <ul class="fk-footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>More</h6>
+        <ul class="fk-footer-links">
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6>Contact</h6>
+        <ul class="fk-footer-links">
+          <li><i class="bi bi-envelope me-2"></i>hello@fluxkode.dev</li>
+          <li><i class="bi bi-telephone me-2"></i>+91 98765 43210</li>
+          <li><i class="bi bi-geo-alt me-2"></i>Mumbai, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fk-footer-bottom">
+      <p>© 2025 Fluxkode. All rights reserved.</p>
+      <p>Crafted with <i class="bi bi-heart-fill text-danger"></i> in India</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

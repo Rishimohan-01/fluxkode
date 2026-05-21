@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Fluxkode</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fk-navbar fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fk-brand" href="index.html"><span class="brand-icon">⬡</span> Fluxkode</a>
+    <button class="navbar-toggler fk-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="technology.html">Technology</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item ms-lg-3"><a class="nav-link fk-btn-nav" href="contact.html">Let's Talk</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="fk-page-hero">
+  <div class="container">
+    <div class="col-lg-8" data-animate="fade-up">
+      <div class="fk-breadcrumb"><a href="index.html">Home</a> / Portfolio</div>
+      <span class="fk-eyebrow">Our Work</span>
+      <h1 class="fk-page-hero-title">Projects We're<br/><em>Proud Of</em></h1>
+      <p>A selection of digital products we've crafted with passion, precision, and purpose for clients around the world.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER -->
+<section class="py-4 bg-light-cream">
+  <div class="container">
+    <div class="d-flex gap-2 flex-wrap" data-animate="fade-up">
+      <button class="fk-filter-btn active" data-filter="all">All Projects</button>
+      <button class="fk-filter-btn" data-filter="webdev">Web Dev</button>
+      <button class="fk-filter-btn" data-filter="design">Web Design</button>
+      <button class="fk-filter-btn" data-filter="webapp">Web App</button>
+      <button class="fk-filter-btn" data-filter="figma">Figma to Code</button>
+      <button class="fk-filter-btn" data-filter="wordpress">WordPress</button>
+      <button class="fk-filter-btn" data-filter="email">HTML Mails</button>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO GRID -->
+<section class="fk-section py-6">
+  <div class="container">
+    <div class="row g-4" id="portfolioGrid">
+
+      <div class="col-md-6 col-lg-4" data-category="webdev" data-animate="fade-up" data-delay="0">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#e8e0f7,#c9d6f5);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:70%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:8px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="height:8px;background:rgba(28,28,46,0.07);border-radius:4px;width:70%;margin-bottom:0.5rem;"></div>
+              <div style="height:20px;width:60px;background:var(--fk-slate);border-radius:100px;opacity:0.7;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">Web Development</span>
+            <h5>LuxeEstate — Real Estate Platform</h5>
+            <p>Full-stack property listing platform with dynamic search, map integration, and agent portal.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="wordpress" data-animate="fade-up" data-delay="80">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#fce8d5,#f5d5c9);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:70%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:8px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="height:8px;background:rgba(28,28,46,0.07);border-radius:4px;width:55%;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">WordPress</span>
+            <h5>Artisan Brew Co. — WooCommerce Store</h5>
+            <p>Custom WooCommerce store with subscription products, loyalty program, and fast checkout.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="figma" data-animate="fade-up" data-delay="160">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#d5ece8,#c9eef5);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:70%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:8px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="height:8px;background:rgba(28,28,46,0.07);border-radius:4px;width:80%;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">Figma to Code</span>
+            <h5>Novara SaaS — Analytics Dashboard</h5>
+            <p>Complex Figma design converted to a pixel-perfect, fully interactive analytics dashboard.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="webapp" data-animate="fade-up" data-delay="0">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#f0e8d5,#e8d5f0);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:70%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:8px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="height:8px;background:rgba(28,28,46,0.07);border-radius:4px;width:65%;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">Web Application</span>
+            <h5>HireFlow — Recruitment Platform</h5>
+            <p>End-to-end recruitment SaaS with applicant tracking, scheduling, and employer branding.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="design" data-animate="fade-up" data-delay="80">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#ede8f5,#f5e8ed);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:70%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:8px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="height:8px;background:rgba(28,28,46,0.07);border-radius:4px;width:45%;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">Web Design</span>
+            <h5>Silhouette Studio — Fashion Brand</h5>
+            <p>High-fashion editorial website design with immersive scroll animations and lookbook gallery.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="email" data-animate="fade-up" data-delay="160">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#d5e8f0,#d5f0e8);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:60%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:6px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.4rem;"></div>
+              <div style="height:6px;background:rgba(28,28,46,0.07);border-radius:4px;width:80%;margin-bottom:0.4rem;"></div>
+              <div style="height:6px;background:rgba(28,28,46,0.07);border-radius:4px;width:60%;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">HTML Email</span>
+            <h5>Vitality Health — Email Campaign Series</h5>
+            <p>Series of 8 promotional email templates with dark mode support and Mailchimp integration.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="webdev" data-animate="fade-up" data-delay="0">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#f5f0d5,#f0e8d5);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:70%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:8px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="height:8px;background:rgba(28,28,46,0.07);border-radius:4px;width:75%;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">Web Development</span>
+            <h5>Nomad.io — Travel Community Hub</h5>
+            <p>Community platform with user profiles, trip logs, and integrated booking widgets.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="wordpress" data-animate="fade-up" data-delay="80">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#e8f5d5,#d5f5e8);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:70%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:8px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="height:8px;background:rgba(28,28,46,0.07);border-radius:4px;width:50%;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">WordPress</span>
+            <h5>Greenfields Academy — Education Portal</h5>
+            <p>WordPress LMS with course management, student dashboards, and payment gateway integration.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="figma" data-animate="fade-up" data-delay="160">
+        <div class="fk-portfolio-grid-card">
+          <div class="fk-pgc-img" style="background:linear-gradient(135deg,#f5d5e8,#e8d5f5);">
+            <div style="background:rgba(255,255,255,0.85);border-radius:8px;width:70%;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <div style="height:8px;background:rgba(28,28,46,0.1);border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="height:8px;background:rgba(28,28,46,0.07);border-radius:4px;width:90%;"></div>
+            </div>
+          </div>
+          <div class="fk-pgc-body">
+            <span class="fk-pc-tag">Figma to Code</span>
+            <h5>FinTrack Pro — Finance App Landing</h5>
+            <p>App landing page from detailed Figma prototype with scroll animations and demo interactions.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="fk-cta-section">
+  <div class="container">
+    <div class="fk-cta-inner" data-animate="fade-up">
+      <div class="cta-shape-1"></div><div class="cta-shape-2"></div>
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="fk-eyebrow light">Your Project Next</span>
+          <h2 class="fk-cta-title">Let's Add Your Project<br/>to Our <em>Portfolio</em></h2>
+          <p>Every great project starts with a conversation. Let's talk about yours.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+          <a href="contact.html" class="fk-btn-cta">Start a Project <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="fk-footer">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-lg-4">
+        <a class="fk-brand mb-3 d-inline-block" href="index.html"><span class="brand-icon">⬡</span> Fluxkode</a>
+        <p class="fk-footer-desc">Premium web agency crafting digital experiences that convert visitors into loyal customers.</p>
+        <div class="fk-social-links mt-3">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <h6>Pages</h6>
+        <ul class="fk-footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>More</h6>
+        <ul class="fk-footer-links">
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6>Contact</h6>
+        <ul class="fk-footer-links">
+          <li><i class="bi bi-envelope me-2"></i>hello@fluxkode.dev</li>
+          <li><i class="bi bi-telephone me-2"></i>+91 98765 43210</li>
+          <li><i class="bi bi-geo-alt me-2"></i>Mumbai, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fk-footer-bottom">
+      <p>© 2025 Fluxkode. All rights reserved.</p>
+      <p>Crafted with <i class="bi bi-heart-fill text-danger"></i> in India</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
